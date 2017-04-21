@@ -1,4 +1,5 @@
 
+scalaVersion := "2.11.8"
 val ammoniumVersion = "0.8.2-2"
 val jupyterKernelVersion = "0.4.0"
 
