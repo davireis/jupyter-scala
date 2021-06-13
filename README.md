@@ -35,7 +35,15 @@ First ensure you have [Jupyter](https://jupyter.org/) installed.
 Running `jupyter --version` should print a value >= 4.0. See [Jupyter installation](#jupyter-installation)
 if it's not the case.
 
-Ensure the [coursier](https://github.com/alexarchambault/coursier) launcher is available in the `PATH`. On OS X, `brew install --HEAD paulp/extras/coursier` should install it. `coursier --help`
+Ensure the [coursier](https://github.com/alexarchambault/coursier) launcher is available in the `PATH`. On OS X, `brew install --HEAD paulp/extras/coursier` should install it.
+
+In Windows environment you should use the 
+`bitsadmin /transfer downloadCoursierCli https://git.io/coursier-cli "%cd%\coursier"` 
+and 
+`bitsadmin /transfer downloadCoursierBat https://git.io/coursier-bat "%cd%\coursier.bat"` commands to install coursier.
+
+Testing coursier availability:
+`coursier --help`
 should then print a version >= 1.0.0-M14.
 
 Then simply run the [`jupyter-scala` script](https://raw.githubusercontent.com/alexarchambault/jupyter-scala/master/jupyter-scala) of this
