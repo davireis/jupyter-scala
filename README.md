@@ -37,10 +37,7 @@ if it's not the case.
 
 Ensure the [coursier](https://github.com/alexarchambault/coursier) launcher is available in the `PATH`. On OS X, `brew install --HEAD paulp/extras/coursier` should install it.
 
-In Windows environment you should use the 
-`bitsadmin /transfer downloadCoursierCli https://git.io/coursier-cli "%cd%\coursier"` 
-and 
-`bitsadmin /transfer downloadCoursierBat https://git.io/coursier-bat "%cd%\coursier.bat"` commands to install coursier.
+For Windows environment check the [Coursier installation](https://get-coursier.io/docs/cli-installation) website to install coursier.
 
 Testing coursier availability:
 `coursier --help`
